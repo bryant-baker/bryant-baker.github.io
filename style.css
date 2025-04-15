@@ -126,44 +126,41 @@ html {
 /***** TOOL *****/
 
 .tool-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
 }
 
 .tool-icons div {
-    width: 100px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    border: 1px solid #e0e0e000;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tool-icons img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
+  width: 80%;
+  height: auto;
+  object-fit: contain;
 }
 
 /***** HERO *****/
 
 .hero {
     width: 100%;
-    height: 200px; /* changed from max-height */
+    height: 200px; 
     overflow: hidden;
     position: relative;
   }
   
   .hero img {
     width: 100%;
-    height: 100%; /* force image to fill container height */
+    height: 100%; 
     object-fit: cover;
-    object-position: center; /* center image vertically and horizontally */
+    object-position: center; 
     display: block;
   }  
   
@@ -184,14 +181,13 @@ html {
     z-index: 2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     text-align: center;
-    max-width: 90%;
-    padding: 0 1rem;
-    line-height: 1.2;
+    max-width: 100%;
+    padding: 0;
   }
   
   .hero-text h1 {
     margin: 0;
-    font-size: clamp(1.5rem, 8vw, 3.5rem);
+    font-size: clamp(1.5rem, 6vw, 3.7rem);
     font-weight: bold;
   }
   
