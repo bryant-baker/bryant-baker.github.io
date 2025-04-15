@@ -126,26 +126,25 @@ html {
 /***** TOOL *****/
 
 .tool-icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1rem 0;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-.tool-icons div {
-  width: 100px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .tool-icons div {
+    width: 100px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.tool-icons img {
-  width: 80%;
-  height: auto;
-  object-fit: contain;
-}
+  .tool-icons img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+  }
 
 /***** HERO *****/
 
