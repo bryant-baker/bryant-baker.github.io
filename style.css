@@ -17,8 +17,8 @@ nav a {
     text-decoration: none;
     color: #3d7aab;
     font-weight: bold;
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
-  
 
 nav a:hover {
     text-decoration: underline;
@@ -273,6 +273,8 @@ html {
     font-size: 1rem;
     margin-bottom: 1em;
   }
+
+/***** IFRAME *****/
 
 .iframe-container {
     position: relative;
