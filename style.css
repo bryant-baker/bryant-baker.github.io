@@ -83,13 +83,13 @@ html {
   background-color: #007acc;
   color: white;
   border: none;
-  padding: 8px 14px;
+  padding: 10px 14px;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 4px;
   position: absolute;
   top: 40%;
-  transform: translateY(-50%);
+  transform: translateY(100%);
   z-index: 1;
 }
 
@@ -277,7 +277,7 @@ html {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 56.25%;
   overflow: hidden;
   }
 
@@ -302,7 +302,7 @@ html {
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
@@ -314,4 +314,66 @@ html {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/***** SWIPER *****/
+
+.swiper-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.swiper-container-wrapper {
+  position: relative;
+  width: 900px;
+  overflow: visible;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.swiper-slide a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-wrapper {
+  align-items: center; 
 }

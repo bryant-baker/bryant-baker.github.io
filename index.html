@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css?v=3">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 
 <body>
     <div class="hero">
@@ -48,73 +49,81 @@
                 <img src="media/images/logos/SQLite-icon.png" alt="SQLite logo"></a></div>
         </div>
     </section>
-    <br>  
     <section>
-        <center><h2>Sample Maps</h2>
-        <div class="glider-contain">
-          <button class="glider-prev">«</button>
-          <div class="glider">
-            <a href="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" target="_blank">
-              <img src="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" alt="2025 LA Fires">
-            </a>
-            <a href="media/maps/fire/2020 North Complex Progression-Severity.png" target="_blank">
-              <img src="media/maps/fire/2020 North Complex Progression-Severity.png" alt="North Complex">
-            </a>
-            <a href="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" target="_blank">
-              <img src="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" alt="Central Valley Oil Drilling">
-            </a>
-
-            <a href="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" target="_blank">
-              <img src="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" alt="Sequoia Groves Fire Severity">
-            </a>
-            <a href="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" target="_blank">
-              <img src="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" alt="Pallid Bat">
-            </a>
-            <a href="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" target="_blank">
-                <img src="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" alt="Pallid Bat">
-            </a>
+      <h2 style="text-align: center;">Sample Maps</h2>
+    </section>
+    <section class="swiper-section">
+      <div class="swiper-container-wrapper">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="media/maps/fire/2020 North Complex Progression-Severity.png" target="_blank">
+                <img src="media/maps/fire/2020 North Complex Progression-Severity.png" alt="North Complex" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" target="_blank">
+                <img src="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" alt="2025 LA Fires" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" target="_blank">
+                <img src="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" alt="Central Valley Oil Drilling" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" target="_blank">
+                <img src="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" alt="Sequoia Groves Fire Severity" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" target="_blank">
+                <img src="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" alt="Pallid Bat" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" target="_blank">
+                <img src="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" alt="Pallid Bat" />
+              </a>
+            </div>
           </div>
-          <button class="glider-next">»</button>
-          <div id="resp-dots" class="dots"></div>
-        </div></center>
-      </section>        
+        </div>
+        <!-- Swiper navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>      
+           
   </main>
   <footer>
     <p>© 2025 Bryant Baker. All Rights Reserved.</p>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
-    new Glider(document.querySelector('.glider'), {
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      scrollLock: true,
-      dots: '#resp-dots',
-      arrows: {
-        prev: '.glider-prev',
-        next: '.glider-next'
+  const swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    loop: true,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
       },
-      responsive: [
-        {
-          breakpoint: 775,
-          settings: {
-            slidesToShow: 'auto',
-            slidesToScroll: 'auto',
-            itemWidth: 'auto',
-            duration: 0.25
-          }
-        },
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            duration: 0.25
-          }
-        }
-      ]
-    });
-  </script>
-  
+      loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+
 </body>
 </html>
