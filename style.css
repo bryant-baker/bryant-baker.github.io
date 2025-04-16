@@ -1,8 +1,14 @@
+/* DOCUMENT INFORMATION
+  - Document: Github Stylesheet
+  - Author: Bryant C. Baker
+*/
+
+/***** MAIN *****/
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  max-width: 800px;
+  max-width: 1280px;
   margin: auto;
-  padding: 2rem;
   color: #333;
 }
 
@@ -47,7 +53,7 @@ html {
 } 
 
 .gallery img {
-  width: 70%;
+  width: 50%;
   height: auto;
   display: block;
   object-fit: cover;
@@ -151,7 +157,7 @@ html {
 
 .hero {
   width: 100%;
-  height: 200px; 
+  height: 250px; 
   overflow: hidden;
   position: relative;
 }
@@ -216,14 +222,53 @@ html {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.headshot {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 .about-text {
   flex: 1;
   min-width: 250px;
+  margin-top: 0;
 }
 
 .about-text h2 {
   margin-top: 0;
   color: #007acc;
+}
+
+.about-text > *:first-child {
+  margin-top: 0;
+}
+
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links img {
+  width: 30px;
+  height: auto;
+  display: block;
+  transition: opacity 0.2s;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.social-links img:hover {
+  opacity: 0.7;
 }
 
 /***** PORTFOLIO *****/
@@ -268,6 +313,13 @@ html {
 .publication-list li {
   font-size: 1rem;
   margin-bottom: 1em;
+}
+
+.publication-list li a {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  color: #3d7aab;
+  font-weight: 600;
 }
 
 /***** IFRAME *****/
