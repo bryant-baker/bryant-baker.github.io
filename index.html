@@ -39,14 +39,16 @@
                 <img src="media/images/logos/qgis-icon.png" alt="QGIS logo"></a></div>
             <div><a href="https://earthengine.google.com/" target="_blank">
                 <img src="media/images/logos/gee-icon.png" alt="GEE logo"></a></div>
+            <div><a href="https://www.arcgis.com/index.html" target="_blank">
+              <img src="media/images/logos/agol-icon.png" alt="AGOL logo"></a></div>
             <div><a href="https://www.python.org/" target="_blank">
                 <img src="media/images/logos/python-icon.png" alt="Python logo"></a></div>
             <div><a href="https://www.r-project.org/" target="_blank">
                 <img src="media/images/logos/R-logo.png" alt="R logo"></a></div>
-            <div><a href="https://www.arcgis.com/index.html" target="_blank">
-                <img src="media/images/logos/agol-icon.png" alt="AGOL logo"></a></div>
             <div><a href="https://sqlite.org/" target="_blank">
                 <img src="media/images/logos/SQLite-icon.png" alt="SQLite logo"></a></div>
+            <div><a href="https://www.adobe.com/creativecloud.html" target="_blank">
+                <img src="media/images/logos/acc-icon.png" alt="ACC logo"></a></div>
         </div>
     </section>
     <section>
@@ -62,28 +64,28 @@
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" target="_blank">
-                <img src="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" alt="2025 LA Fires" />
-              </a>
-            </div>
-            <div class="swiper-slide">
               <a href="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" target="_blank">
                 <img src="media/maps/oil-fracking/Oil Drilling in Central Valley ACECs_Bryant Baker.png" alt="Central Valley Oil Drilling" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" target="_blank">
-                <img src="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery_Group A.png" alt="Sequoia Groves Fire Severity" />
+              <a href="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" target="_blank">
+                <img src="media/maps/fire/2025 LA Fires_EVeg_Chart_v4.png" alt="2025 LA Fires" />
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" target="_blank">
-                <img src="media/maps/wildlife/California_2023 Point Density (SCal)_Historical.png" alt="Pallid Bat" />
+              <a href="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery.png" target="_blank">
+                <img src="media/maps/fire/KNP Complex_All Groves_Post-fire Imagery.png" alt="Sequoia Groves Fire Severity" />
               </a>
             </div>
             <div class="swiper-slide">
               <a href="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" target="_blank">
                 <img src="media/maps/wildlife/Pallid Bat_Map_Format_Final.png" alt="Pallid Bat" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="media/maps/public-lands/Regional Public Lands Map and Info_v3.png" target="_blank">
+                <img src="media/maps/public-lands/Regional Public Lands Map and Info_v3.png" alt="Regional Public Lands" />
               </a>
             </div>
           </div>
@@ -92,8 +94,8 @@
         <div class="swiper-button-prev"></div>
       </div>
     </section>      
-           
   </main>
+
   <footer>
     <p>© 2025 Bryant Baker. All Rights Reserved.</p>
   </footer>
@@ -103,26 +105,17 @@
 
 <script>
   const swiper = new Swiper(".swiper", {
-    effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 3,
+    spaceBetween:20,
     loop: true,
-    coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
   });
 </script>
-
 
 </body>
 </html>
